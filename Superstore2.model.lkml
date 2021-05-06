@@ -12,6 +12,8 @@ datagroup: rebate_what_if_project_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+# this is version 2
+
 access_grant: can_view_customer_name {
   user_attribute: customername
   allowed_values: [ "yes" ]
