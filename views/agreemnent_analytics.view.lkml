@@ -1,4 +1,4 @@
-view: agreement_analytics {
+view: agreemnent_analytics {
   derived_table: {
     sql: Select * from vistex-analytics.VIZI_REPORT_LAYER.AGMT_EXP
       ;;
@@ -111,12 +111,12 @@ view: agreement_analytics {
     sql: ${TABLE}.XCOMMITAMT ;;
   }
 
-  dimension: xcommitqty {
+  measure: xcommitqty {
     type: number
     sql: ${TABLE}.XCOMMITQTY ;;
   }
 
-  dimension: xcounter {
+  measure: xcounter {
     type: number
     sql: ${TABLE}.XCOUNTER ;;
   }
@@ -206,162 +206,162 @@ view: agreement_analytics {
     sql: ${TABLE}.XNDAYS ;;
   }
 
-  dimension: xamount1 {
+  measure: xamount1 {
     type: number
     sql: ${TABLE}.XAMOUNT1 ;;
   }
 
-  dimension: xamount2 {
+  measure: xamount2 {
     type: number
     sql: ${TABLE}.XAMOUNT2 ;;
   }
 
-  dimension: xamount3 {
+  measure: xamount3 {
     type: number
     sql: ${TABLE}.XAMOUNT3 ;;
   }
 
-  dimension: xamount4 {
+  measure: xamount4 {
     type: number
     sql: ${TABLE}.XAMOUNT4 ;;
   }
 
-  dimension: xamount5 {
+  measure: xamount5 {
     type: number
     sql: ${TABLE}.XAMOUNT5 ;;
   }
 
-  dimension: xamount6 {
+  measure: xamount6 {
     type: number
     sql: ${TABLE}.XAMOUNT6 ;;
   }
 
-  dimension: xamount7 {
+  measure: xamount7 {
     type: number
     sql: ${TABLE}.XAMOUNT7 ;;
   }
 
-  dimension: xamount8 {
+  measure: xamount8 {
     type: number
     sql: ${TABLE}.XAMOUNT8 ;;
   }
 
-  dimension: xamount9 {
+  measure: xamount9 {
     type: number
     sql: ${TABLE}.XAMOUNT9 ;;
   }
 
-  dimension: xamount10 {
+  measure: xamount10 {
     type: number
     sql: ${TABLE}.XAMOUNT10 ;;
   }
 
-  dimension: xamount11 {
+  measure: xamount11 {
     type: number
     sql: ${TABLE}.XAMOUNT11 ;;
   }
 
-  dimension: xamount12 {
+  measure: xamount12 {
     type: number
     sql: ${TABLE}.XAMOUNT12 ;;
   }
 
-  dimension: xamount13 {
+  measure: xamount13 {
     type: number
     sql: ${TABLE}.XAMOUNT13 ;;
   }
 
-  dimension: xamount14 {
+  measure: xamount14 {
     type: number
     sql: ${TABLE}.XAMOUNT14 ;;
   }
 
-  dimension: xamount15 {
+  measure: xamount15 {
     type: number
     sql: ${TABLE}.XAMOUNT15 ;;
   }
 
-  dimension: xamount16 {
+  measure: xamount16 {
     type: number
     sql: ${TABLE}.XAMOUNT16 ;;
   }
 
-  dimension: xamount17 {
+  measure: xamount17 {
     type: number
     sql: ${TABLE}.XAMOUNT17 ;;
   }
 
-  dimension: xamount18 {
+  measure: xamount18 {
     type: number
     sql: ${TABLE}.XAMOUNT18 ;;
   }
 
-  dimension: xamount19 {
+  measure: xamount19 {
     type: number
     sql: ${TABLE}.XAMOUNT19 ;;
   }
 
-  dimension: xamount20 {
+  measure: xamount20 {
     type: number
     sql: ${TABLE}.XAMOUNT20 ;;
   }
 
-  dimension: xamount21 {
+  measure: xamount21 {
     type: number
     sql: ${TABLE}.XAMOUNT21 ;;
   }
 
-  dimension: xamount22 {
+  measure: xamount22 {
     type: number
     sql: ${TABLE}.XAMOUNT22 ;;
   }
 
-  dimension: xamount23 {
+  measure: xamount23 {
     type: number
     sql: ${TABLE}.XAMOUNT23 ;;
   }
 
-  dimension: xamount24 {
+  measure: xamount24 {
     type: number
     sql: ${TABLE}.XAMOUNT24 ;;
   }
 
-  dimension: xamount25 {
+  measure: xamount25 {
     type: number
     sql: ${TABLE}.XAMOUNT25 ;;
   }
 
-  dimension: xamount26 {
+  measure: xamount26 {
     type: number
     sql: ${TABLE}.XAMOUNT26 ;;
   }
 
-  dimension: xamount27 {
+  measure: xamount27 {
     type: number
     sql: ${TABLE}.XAMOUNT27 ;;
   }
 
-  dimension: xamount28 {
+  measure: xamount28 {
     type: number
     sql: ${TABLE}.XAMOUNT28 ;;
   }
 
-  dimension: xamount29 {
+  measure: xamount29 {
     type: number
     sql: ${TABLE}.XAMOUNT29 ;;
   }
 
-  dimension: xamount30 {
+  measure: xamount30 {
     type: number
     sql: ${TABLE}.XAMOUNT30 ;;
   }
 
-  dimension: xytd_sales {
+  measure: xytd_sales {
     type: number
     sql: ${TABLE}.XYTD_SALES ;;
   }
 
-  dimension: xlytd_sales {
+  measure: xlytd_sales {
     type: number
     sql: ${TABLE}.XLYTD_SALES ;;
   }
