@@ -376,7 +376,7 @@ view: agmt_exp {
   }
 
   measure: xactiveaggrmnt {
-    type: number
+    type: sum
     sql: ${TABLE}.XACTIVEAGGRMNT ;;
   }
 

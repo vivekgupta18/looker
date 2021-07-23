@@ -9,6 +9,9 @@ datagroup: agreement_analytics_default_datagroup {
 }
 
 persist_with: agreement_analytics_default_datagroup
+explore: agmt_exp{
+  label: "Agreement Analytics"
+}
 
 # explore: automl_forecast {}
 
@@ -33,4 +36,3 @@ persist_with: agreement_analytics_default_datagroup
 # explore: reb_sales_new {}
 
 # explore: tr_data_sales {}
-
