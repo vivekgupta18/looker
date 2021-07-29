@@ -360,6 +360,22 @@ view: agmt_exp {
     sql: ${TABLE}.XYTD_SALES ;;
   }
 
+  measure: xexpcount_30 {
+    type: sum
+    sql: ${TABLE}.XEXPCOUNT_30 ;;
+  }
+
+  measure: xexpcount_90 {
+    type: sum
+    sql: ${TABLE}.XEXPCOUNT_90 ;;
+  }
+
+  measure: xexpcount_60 {
+    type: sum
+    sql: ${TABLE}.XEXPCOUNT_60 ;;
+  }
+
+
   measure: xlytd_sales {
     type: sum
     sql: ${TABLE}.XLYTD_SALES ;;
