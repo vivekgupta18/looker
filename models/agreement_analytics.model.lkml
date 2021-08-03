@@ -10,9 +10,11 @@ datagroup: agreement_analytics_default_datagroup {
 
 persist_with: agreement_analytics_default_datagroup
 explore: agmt_exp{
-  label: "Agreement Analytics"
+  label: "Agreement Expiry"
 }
-
+explore: agmt_requests{
+  label: "Agreement Requests"
+}
 
 # explore: automl_forecast {}
 
