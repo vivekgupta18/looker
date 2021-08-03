@@ -173,7 +173,7 @@ view: agmt_requests {
   }
 
   dimension: xowner {
-    type: number
+    type: string
     sql: ${TABLE}.XOWNER ;;
   }
 
