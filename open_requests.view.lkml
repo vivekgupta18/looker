@@ -258,18 +258,18 @@ view: open_requests {
     sql: ${TABLE}.XLOSTCOUNT ;;
   }
 
-  dimension: xopenreqcount {
-    type: number
+  measure: xopenreqcount {
+    type: sum
     sql: ${TABLE}.XOPENREQCOUNT ;;
   }
 
-  dimension: xnewcount {
-    type: number
+  measure: xnewcount {
+    type: sum
     sql: ${TABLE}.XNEWCOUNT ;;
   }
 
-  dimension: xrenewalcount {
-    type: number
+  measure: xrenewalcount {
+    type: sum
     sql: ${TABLE}.XRENEWALCount ;;
   }
 
