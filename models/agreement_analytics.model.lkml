@@ -12,10 +12,7 @@ persist_with: agreement_analytics_default_datagroup
 explore: agmt_exp{
   label: "Agreement Analytics"
 }
-persist_with: agreement_analytics_default_datagroup
-explore: open_requests{
-  label: "Open Requests"
-}
+
 
 # explore: automl_forecast {}
 
