@@ -42,8 +42,8 @@ view: agmt_requests {
     sql: ${TABLE}.XCLNTID ;;
   }
 
-  dimension: xcommitamt {
-    type: number
+  measure: xcommitamt {
+    type: sum
     sql: ${TABLE}.XCOMMITAMT ;;
   }
 
@@ -77,8 +77,8 @@ view: agmt_requests {
     sql: ${TABLE}.XCONTREQTYPE ;;
   }
 
-  dimension: xcounter {
-    type: number
+  measure: xcounter {
+    type: sum
     sql: ${TABLE}.XCOUNTER ;;
   }
 
@@ -157,13 +157,13 @@ view: agmt_requests {
     sql: ${TABLE}.XMONTH ;;
   }
 
-  dimension: xnewcount {
-    type: number
+  measure: xnewcount {
+    type: sum
     sql: ${TABLE}.XNEWCOUNT ;;
   }
 
-  dimension: xopenreqcount {
-    type: number
+  measure: xopenreqcount {
+    type: sum
     sql: ${TABLE}.XOPENREQCOUNT ;;
   }
 
@@ -207,8 +207,8 @@ view: agmt_requests {
     sql: ${TABLE}.XREGION ;;
   }
 
-  dimension: xrenewalcount {
-    type: number
+  measure: xrenewalcount {
+    type: sum
     sql: ${TABLE}.XRENEWALCount ;;
   }
 
