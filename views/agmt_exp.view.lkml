@@ -416,6 +416,12 @@ view: agmt_exp {
     sql: ${TABLE}.XADDTHISMNTH ;;
   }
 
+  measure: growth_sales {
+    type: sum
+    precision: 2
+    sql: ${TABLE}.XYTD_SALES - ${TABLE}.XLYTD_SALES ;;
+  }
+
   set: detail {
     fields: [
       mandt,
