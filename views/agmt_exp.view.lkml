@@ -421,7 +421,14 @@ view: agmt_exp {
     precision: 2
     sql: ${TABLE}.XYTD_SALES - ${TABLE}.XLYTD_SALES ;;
   }
-
+  measure: xytd_qty {
+    type: sum
+    sql: ${TABLE}.XYTD_QTY ;;
+  }
+  measure: xlytd_qty {
+    type: sum
+    sql: ${TABLE}.XLYTD_QTY ;;
+  }
   set: detail {
     fields: [
       mandt,
