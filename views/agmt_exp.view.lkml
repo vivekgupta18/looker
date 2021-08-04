@@ -116,7 +116,7 @@ view: agmt_exp {
   }
 
   measure: xcounter {
-    type: number
+    type: sum
     sql: ${TABLE}.XCOUNTER ;;
   }
 
