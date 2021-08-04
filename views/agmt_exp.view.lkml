@@ -106,12 +106,12 @@ view: agmt_exp {
   }
 
   measure: xcommitamt {
-    type: number
+    type: sum
     sql: ${TABLE}.XCOMMITAMT ;;
   }
 
   measure: xcommitqty {
-    type: number
+    type: sum
     sql: ${TABLE}.XCOMMITQTY ;;
   }
 
