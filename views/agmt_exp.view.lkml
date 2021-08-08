@@ -397,7 +397,7 @@ view: agmt_exp {
   }
 
   measure: xlstmtactive {
-    type: number
+    type: sum
     sql: ${TABLE}.XLSTMTACTIVE ;;
   }
 
@@ -412,7 +412,7 @@ view: agmt_exp {
   }
 
   measure: xaddthismnth {
-    type: number
+    type: sum
     sql: ${TABLE}.XADDTHISMNTH ;;
   }
 
