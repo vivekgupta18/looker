@@ -23,6 +23,13 @@ view: agmt_exp {
     sql: ${TABLE}.XCONTRACT ;;
   }
 
+  dimension: XEXPBUCKETDESC {
+    type: string
+    sql: ${TABLE}.XCONTRACT ;;
+  }
+
+
+
   dimension: xcontdesc {
     type: string
     sql: ${TABLE}.XCONTDESC ;;
