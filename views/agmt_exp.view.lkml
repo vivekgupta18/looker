@@ -25,7 +25,7 @@ view: agmt_exp {
 
   dimension: XEXPBUCKETDESC {
     type: string
-    sql: ${TABLE}.XCONTRACT ;;
+    sql: ${TABLE}.XEXPBUCKETDESC ;;
   }
 
 
