@@ -8,8 +8,14 @@ datagroup: agreement_analytics_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+access_grant: agreement_expiry_grant {
+  user_attribute: company
+  allowed_values: ["Vistex"]
+}
+
 persist_with: agreement_analytics_default_datagroup
 explore: agmt_exp{
+  required_access_grants: [agreement_expiry_grant]
   label: "Agreement Expiry"
 }
 explore: agmt_requests{
