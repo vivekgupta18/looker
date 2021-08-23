@@ -1,8 +1,13 @@
 connection: "vistex_bq_ldata"
 
 # include all the views
-include: "/views/**/*.view"
+include: "/Views/Agreement_Analytics_Views/*.view"
 
+# include dashboards
+
+include: "/Agreement_Analytics_Dashboards/*"
+
+include: "/Agreement_Explores.explore"
 datagroup: agreement_analytics_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
@@ -14,13 +19,14 @@ access_grant: agreement_expiry_grant {
 }
 
 persist_with: agreement_analytics_default_datagroup
-explore: agmt_exp{
-  required_access_grants: [agreement_expiry_grant]
-  label: "Agreement Expiry"
-}
-explore: agmt_requests{
-  label: "Agreement Requests"
-}
+
+# explore: agmt_exp{
+#   required_access_grants: [agreement_expiry_grant]
+#   label: "Agreement Expiry"
+# }
+# explore: agmt_requests{
+#   label: "Agreement Requests"
+# }
 
 ### Test commit
 
