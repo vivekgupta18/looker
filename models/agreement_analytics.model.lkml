@@ -5,7 +5,7 @@ include: "/Views/Agreement_Analytics_Views/*.view"
 
 # include dashboards
 
-# include: "/Agreement_Analytics_Dashboards/*"
+include: "/Dashboards/Agreement_Analytics/*"
 
 include: "/Agreement_Explores.explore"
 datagroup: agreement_analytics_default_datagroup {
