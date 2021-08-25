@@ -146,7 +146,7 @@
     height: 4
   - title: Expires in 30 days
     name: Expires in 30 days
-    model: agreement_analytics
+    model: Customer1_Agreement_Analytics
     explore: agmt_exp
     type: single_value
     fields: [agmt_exp.xexpcount_30]
