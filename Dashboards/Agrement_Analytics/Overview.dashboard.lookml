@@ -367,7 +367,7 @@
     label_color: [black]
     defaults_version: 1
     listen: {}
-    row: 12
+    row: 8
     col: 16
     width: 8
     height: 8
@@ -751,7 +751,7 @@
     note_text: Prior Month
     listen: {}
     row: 8
-    col: 8
+    col: 4
     width: 4
     height: 4
   - title: Delta
@@ -778,6 +778,6 @@
     note_text: Delta
     listen: {}
     row: 8
-    col: 16
+    col: 8
     width: 4
     height: 4
