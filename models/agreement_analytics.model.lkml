@@ -5,9 +5,9 @@ include: "/Views/Agreement_Analytics_Views/*.view"
 
 # include dashboards
 
-include: "/Dashboards/Agreement_Analytics/*"
+# include: "/Dashboards/Agreement_Analytics/*"
 
-include: "/Agreement_Explores.explore"
+# include: "/Agreement_Explores.explore"
 datagroup: agreement_analytics_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"

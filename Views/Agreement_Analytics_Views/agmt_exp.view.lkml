@@ -14,6 +14,7 @@ view: agmt_exp {
   }
 
   dimension: xclntid {
+      # required_access_grants: [agreement_expiry_grant]
     type: string
     sql: ${TABLE}.XCLNTID ;;
   }
