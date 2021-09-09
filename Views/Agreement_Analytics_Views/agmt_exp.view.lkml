@@ -52,10 +52,50 @@ view: agmt_exp {
     sql: ${TABLE}.XVALIDFROM ;;
   }
 
+#### TEMPLATE FILTERS
+
+dimension_group: date_dimension_group {
+     type: time
+    datatype:  date
+  timeframes: [week,date,day_of_month,year,month]
+  sql:   ${TABLE}.XVALIDFROM ;;
+
+}
+########################################################################333
+
+  filter: date_filter {
+    description: "Use this field to filter the Document measures by relevant date fields (ie. Modified, added)."
+    type: date
+    datatype: date
+    suggest_dimension: xvalidfrom
+  }
+
+  dimension: is_modified_in_date_range {
+    hidden: yes
+    type: yesno
+    sql: {% condition date_filter %} ${date_dimension_group_date} {% endcondition %} ;;
+  }
+
+  measure: total_template_filter_customer_count {
+    description: "The count of customer in a date ranger."
+    type: count_distinct
+    sql: ${xcustomer} ;;
+    #value_format_name: auto
+    filters: [is_modified_in_date_range: "yes"]
+    #drill_fields: [id, document_name, client_id]
+  }
+
+# template filter is applied in SELECT of the query
+
+  ##########################################################################
+
+
+
   dimension: xvalidto {
     type: date
     datatype: date
     sql: ${TABLE}.XVALIDTO ;;
+    group_label: "group label 1"
   }
 
   dimension: xparentcont {
@@ -66,6 +106,7 @@ view: agmt_exp {
   dimension: xcontstatus {
     type: string
     sql: ${TABLE}.XCONTSTATUS ;;
+    group_label: "group label 1"
   }
 
   dimension: xcontrnflag {
@@ -402,7 +443,13 @@ view: agmt_exp {
   measure: xactiveaggrmnt {
     type: sum
     sql: ${TABLE}.XACTIVEAGGRMNT ;;
+
+    link: {label: "Drill for detailed info"
+      url: "https://vistex.cloud.looker.com/dashboards-next/16?Contract={{xcontract._value}}"}
   }
+
+
+################################
 
   measure: xlstmtactive {
     type: sum
@@ -437,6 +484,48 @@ view: agmt_exp {
     type: sum
     sql: ${TABLE}.XLYTD_QTY ;;
   }
+
+  ##########################################
+  #PARAMETERS##############33
+
+  parameter: dynamic_dimension_parameter {
+    type: string
+    allowed_value: {value: "Owner" label: "Owner Label"}
+    allowed_value: {value: "Customer" label: "Customer Label"}
+    label: "Select The Dimension: "
+    description: "This will select the contect for dynamic Dimension"
+  }
+
+# LIQUID LOGIC
+
+
+ dimension: dynamic_dimension {
+
+  type:  string
+  sql: CASE WHEN {% parameter dynamic_dimension_parameter %} = 'Owner' THEN CAST(${xowner} AS STRING)
+            WHEN {% parameter dynamic_dimension_parameter %} = 'Customer' THEN ${xcustomer}
+       END ;;
+
+  label_from_parameter: dynamic_dimension_parameter   # this will put the label in the dimension
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##########################################################################################
+
   set: detail {
     fields: [
       mandt,

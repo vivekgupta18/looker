@@ -23,6 +23,7 @@ persist_with: agreement_analytics_default_datagroup
 explore: agmt_exp{
   # required_access_grants: [agreement_expiry_grant]
   label: "Agreement Expiry"
+  view_label: "Agreement Expiry"
 }
 explore: agmt_requests{
   label: "Agreement Requests"
